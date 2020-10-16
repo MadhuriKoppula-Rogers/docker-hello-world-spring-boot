@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Namespace
+metadata:   
+  name: temp
+  labels:
+    app: springboot
+    appenv: dev
+    istio-injection: enabled

@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: springbootservice
+  namespace: temp
+  labels:
+    app: springboot
+spec:
+  type: ClusterIP
+  #type: NodePort
+  ports:
+  - name : http
+    port: 5000
+    targetPort: 8080
+  selector:
+    app: springboot
